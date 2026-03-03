@@ -1,0 +1,177 @@
+# DRIFT default configuration
+# All path fields use absolute paths; override per-experiment via CLI or a
+# child YAML that merges with this file.
+
+# ---------------------------------------------------------------------------
+# ADM backbone
+# ---------------------------------------------------------------------------
+model:
+  adm_model_path: "/checkpoints/256x256_diffusion_uncond.pt"
+  image_size: 256
+  num_channels: 256
+  num_res_blocks: 2
+  num_heads: 4
+  num_head_channels: 64
+  attention_resolutions: "32,16,8"
+  channel_mult: ""
+  dropout: 0.1
+  class_cond: false
+  use_checkpoint: false
+  use_scale_shift_norm: true
+  resblock_updown: true
+  use_fp16: true
+  use_new_attention_order: false
+  learn_sigma: true
+  diffusion_steps: 1000
+  noise_schedule: "linear"
+
+# ---------------------------------------------------------------------------
+# DDIM inversion
+# ---------------------------------------------------------------------------
+inversion:
+  ddim_steps: 20
+  # Sparse sampling strategy: "uniform" | "front_dense"
+  # "uniform"      — evenly spaced timesteps
+  # "front_dense"  — more steps near t=0 (captures early trajectory details)
+  sampling_strategy: "uniform"
+  # Eta for DDIM (0 = deterministic)
+  eta: 0.0
+  # Return all intermediate states (required for F2/F3/F4 features)
+  return_intermediates: true
+
+# ---------------------------------------------------------------------------
+# Feature scheme
+# ---------------------------------------------------------------------------
+features:
+  # Choose one of: F1 | F2 | F3 | F4
+  # F1 — statistics of x_T (mean, std, skewness, kurtosis per channel)
+  # F2 — trajectory-level statistics (differences between consecutive x_t)
+  # F3 — PSD (power-spectral-density) of x_T
+  # F4 — Wasserstein distances along the trajectory
+  scheme: "F1"
+  # Dimension of the resulting feature vector (filled in by each extractor)
+  feature_dim: null
+
+# ---------------------------------------------------------------------------
+# Data
+# ---------------------------------------------------------------------------
+data:
+  # Root directory following AIGCDetectBenchmark layout:
+  #   root/<generator_name>/0_real/  and  root/<generator_name>/1_fake/
+  dataroot: "/data/AIGCBenchmark"
+  image_size: 256
+  load_size: 256
+  crop_size: 256
+  # "binary_mode" | "attribution_mode"
+  mode: "binary_mode"
+  # max samples per class; null = use all available
+  num_samples: null
+  # Random seed for dataset splitting
+  seed: 42
+  # Train / val / test fractions (must sum to 1.0)
+  split_ratios:
+    train: 0.7
+    val: 0.15
+    test: 0.15
+
+# ---------------------------------------------------------------------------
+# Data augmentation (mirroring AIGCDetectBenchmark)
+# ---------------------------------------------------------------------------
+augmentation:
+  # Resize interpolation: "bilinear" | "bicubic" | "lanczos" | "nearest"
+  rz_interp: "bilinear"
+  # Optional noise augmentation during training: "jpg" | "blur" | "none"
+  noise_type: "none"
+  jpg_qual: [75, 95]
+  blur_sig: [0.0, 3.0]
+  no_flip: false
+  no_crop: false
+  no_resize: false
+
+# ---------------------------------------------------------------------------
+# Training
+# ---------------------------------------------------------------------------
+training:
+  batch_size: 32
+  num_epochs: 30
+  # Optimizer: "adam" | "sgd"
+  optim: "adam"
+  lr: 1.0e-4
+  beta1: 0.9
+  weight_decay: 1.0e-4
+  # LR scheduler: "step" | "cosine" | "none"
+  lr_scheduler: "cosine"
+  lr_step_size: 5
+  lr_gamma: 0.1
+  # Gradient clipping (0 = disabled)
+  grad_clip: 1.0
+  # Mixed precision: true | false
+  amp: false
+  # Checkpoint directory
+  checkpoint_dir: "./checkpoints"
+  # Save every N epochs
+  save_every: 5
+  # Validate every N epochs
+  val_every: 1
+
+# ---------------------------------------------------------------------------
+# Evaluation
+# ---------------------------------------------------------------------------
+evaluation:
+  # Metrics to compute: subsets of [auc, ap, acc, inference_time]
+  metrics:
+    - auc
+    - ap
+    - acc
+    - inference_time
+  # Cross-generator evaluation: list of generator names to evaluate separately
+  cross_generator_names:
+    - progan
+    - stylegan
+    - stylegan2
+    - biggan
+    - cyclegan
+    - stargan
+    - gaugan
+    - ADM
+    - Glide
+    - Midjourney
+    - stable_diffusion_v_1_4
+    - stable_diffusion_v_1_5
+    - VQDM
+    - DALLE2
+  # Output directory for evaluation results
+  output_dir: "./results"
+
+# ---------------------------------------------------------------------------
+# Attribution (Phase 4)
+# ---------------------------------------------------------------------------
+attribution:
+  # Number of GMM components (should be >= num_generators)
+  n_gmm_components: 15
+  # Number of known generator classes for linear alignment
+  num_generators: 14
+  # GMM init method: "k-means++" | "random"
+  gmm_init: "k-means++"
+  # GMM random seed
+  gmm_seed: 42
+  # Fraction of labelled data used in Phase 2 linear alignment
+  label_fraction: 0.1
+
+# ---------------------------------------------------------------------------
+# Logging
+# ---------------------------------------------------------------------------
+logging:
+  log_dir: "./logs"
+  log_level: "INFO"
+  use_tensorboard: true
+  tensorboard_dir: "./runs"
+  # Print training metrics every N steps
+  log_every: 50
+
+# ---------------------------------------------------------------------------
+# Device
+# ---------------------------------------------------------------------------
+device: "cuda"
+num_workers: 4
+pin_memory: true
