@@ -1,0 +1,109 @@
+2026-03-04 23:40:38 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-04 23:40:38 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:40:38 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-04 23:40:38 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:40:38 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': 'DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 64, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-04 23:40:38 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-04 23:40:38 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-04 23:44:28 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-04 23:44:28 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:44:28 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-04 23:44:28 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:44:28 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': 'DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 64, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-04 23:44:28 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-04 23:44:28 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-04 23:44:28 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-04 23:45:26 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-04 23:45:26 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:45:26 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-04 23:45:26 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:45:26 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': 'DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 64, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-04 23:45:26 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-04 23:45:26 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-04 23:45:26 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-04 23:54:49 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-04 23:54:49 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:54:49 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-04 23:54:49 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:54:49 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': 'DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-04 23:54:49 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-04 23:54:49 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-04 23:54:49 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-04 23:55:41 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-04 23:55:41 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:55:41 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-04 23:55:41 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-04 23:55:41 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': 'DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-04 23:55:41 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-04 23:55:41 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-04 23:55:41 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 00:04:48 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-05 00:04:48 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:04:48 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 00:04:48 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:04:48 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': 'DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 00:04:48 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 00:04:48 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 00:04:48 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 00:04:54 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 00:04:54 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 00:04:54 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 00:05:48 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-05 00:05:48 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:05:48 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 00:05:48 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:05:48 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 00:05:48 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 00:05:48 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 00:05:48 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 00:05:54 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 00:05:54 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 00:05:54 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 00:22:22 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-05 00:22:22 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:22:22 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 00:22:22 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:22:22 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 00:22:22 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 00:22:22 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 00:28:02 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-05 00:28:02 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:28:02 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 00:28:02 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:28:02 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 00:28:02 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 00:28:02 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 00:28:02 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 00:28:08 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 00:28:08 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 00:28:08 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 00:49:14 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-05 00:49:14 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:49:14 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 00:49:14 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:49:14 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 00:49:14 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 00:49:14 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 00:49:14 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 00:49:20 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 00:49:20 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 00:49:20 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 00:49:21 | INFO     | DRIFT.phase1 | Step 3b: Pre-computing x_T cache ...
+2026-03-05 00:49:21 | INFO     | DRIFT.models.preprocessing.feature_cache | FeatureCache initialised: cache_dir='/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/experiments/results/phase1_baseline/x_T_cache'
+2026-03-05 00:49:21 | INFO     | DRIFT.phase1 | Pre-computing x_T for 1200 images ...
+2026-03-05 00:49:21 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset: 1200 total, 0 already cached, 1200 to compute.
+2026-03-05 01:04:03 | INFO     | DRIFT | Log file: ./results/phase1_baseline/phase1.log
+2026-03-05 01:04:03 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 01:04:03 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 01:04:03 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 01:04:03 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5,Wukong', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_baseline', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 01:04:03 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 01:04:03 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 01:04:03 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 01:04:10 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 01:04:10 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 01:04:10 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 01:04:11 | INFO     | DRIFT.phase1 | Step 3b: Pre-computing x_T cache ...
+2026-03-05 01:04:11 | INFO     | DRIFT.models.preprocessing.feature_cache | FeatureCache initialised: cache_dir='/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/experiments/results/phase1_baseline/x_T_cache'
+2026-03-05 01:04:11 | INFO     | DRIFT.phase1 | Pre-computing x_T for 1200 images ...
+2026-03-05 01:04:11 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset: 1200 total, 0 already cached, 1200 to compute.

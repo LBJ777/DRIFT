@@ -468,7 +468,7 @@ def _build_real_loaders(
             )
             continue
         dl_obj = DRIFTDataLoader(
-            root=gen_root,
+            root=args.data_dir,
             mode="binary_mode",
             split="test",
             image_size=args.image_size,
