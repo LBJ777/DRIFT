@@ -1,0 +1,103 @@
+{
+  "test4_ks": {
+    "vs_gaussian_reference": {
+      "ProGAN": {
+        "ks_statistic": 0.053,
+        "p_value": 1.5816701106934e-06,
+        "is_gaussian": false,
+        "is_real_source": false
+      },
+      "SD_v1.5": {
+        "ks_statistic": 0.037,
+        "p_value": 0.002127664129050972,
+        "is_gaussian": false,
+        "is_real_source": false
+      },
+      "Wukong": {
+        "ks_statistic": 0.0362,
+        "p_value": 0.0028517312552505617,
+        "is_gaussian": false,
+        "is_real_source": false
+      },
+      "real": {
+        "ks_statistic": 0.0586,
+        "p_value": 6.930330389435789e-08,
+        "is_gaussian": false,
+        "is_real_source": true
+      }
+    },
+    "pairwise_ks": {
+      "ProGAN_vs_SD_v1.5": {
+        "ks_statistic": 0.029,
+        "p_value": 0.02983643245840902,
+        "significant_bonferroni": false,
+        "bonferroni_alpha": 0.008333333333333333
+      },
+      "ProGAN_vs_Wukong": {
+        "ks_statistic": 0.0238,
+        "p_value": 0.11774423413675565,
+        "significant_bonferroni": false,
+        "bonferroni_alpha": 0.008333333333333333
+      },
+      "ProGAN_vs_real": {
+        "ks_statistic": 0.0174,
+        "p_value": 0.43549127415019256,
+        "significant_bonferroni": false,
+        "bonferroni_alpha": 0.008333333333333333
+      },
+      "SD_v1.5_vs_Wukong": {
+        "ks_statistic": 0.0124,
+        "p_value": 0.8367973787613723,
+        "significant_bonferroni": false,
+        "bonferroni_alpha": 0.008333333333333333
+      },
+      "SD_v1.5_vs_real": {
+        "ks_statistic": 0.0316,
+        "p_value": 0.013568763904229907,
+        "significant_bonferroni": false,
+        "bonferroni_alpha": 0.008333333333333333
+      },
+      "Wukong_vs_real": {
+        "ks_statistic": 0.0344,
+        "p_value": 0.005384513310079144,
+        "significant_bonferroni": true,
+        "bonferroni_alpha": 0.008333333333333333
+      }
+    },
+    "n_pairs": 6,
+    "n_significant": 1,
+    "fraction_significant": 0.16666666666666666,
+    "bonferroni_alpha": 0.008333333333333333,
+    "passed": false,
+    "note": "来源间 1/6 对 Bonferroni 校正后显著不同 (17%)，≥80% 视为通过",
+    "threshold_fraction": 0.8
+  },
+  "test5_classification": {
+    "n_classes": 4,
+    "cv_accuracy_mean": 0.8400000000000001,
+    "cv_accuracy_std": 0.03570714214271425,
+    "cv_scores": [
+      0.83125,
+      0.84375,
+      0.80625,
+      0.8125,
+      0.90625
+    ],
+    "random_baseline": 0.25,
+    "threshold": 0.5,
+    "passed": true,
+    "note": "k-NN 4类 5折CV精度 84.0%±3.6%（阈值 > 50%，随机基线 25%） → 通过"
+  },
+  "meta": {
+    "num_samples": 200,
+    "image_size": 256,
+    "ddim_steps": 20,
+    "mock": false,
+    "sources": [
+      "ProGAN",
+      "SD_v1.5",
+      "Wukong",
+      "real"
+    ]
+  }
+}

@@ -1,0 +1,230 @@
+2026-03-05 00:45:46 | INFO     | DRIFT | Log file: ./results/phase1_crossgen/phase1.log
+2026-03-05 00:45:46 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:45:46 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 00:45:46 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 00:45:46 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_crossgen', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 00:45:46 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 00:45:46 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 00:45:46 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 00:45:52 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 00:45:52 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 00:45:52 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 00:45:53 | INFO     | DRIFT.phase1 | Step 3b: Pre-computing x_T cache ...
+2026-03-05 00:45:53 | INFO     | DRIFT.models.preprocessing.feature_cache | FeatureCache initialised: cache_dir='/data/lizihao/AIGC/AIGCDetectBenchmark-main/results/phase1_crossgen/x_T_cache'
+2026-03-05 00:45:53 | INFO     | DRIFT.phase1 | Pre-computing x_T for 1200 images ...
+2026-03-05 00:45:53 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset: 1200 total, 0 already cached, 1200 to compute.
+2026-03-05 01:07:56 | INFO     | DRIFT | Log file: ./results/phase1_crossgen/phase1.log
+2026-03-05 01:07:56 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 01:07:56 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 01:07:56 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 01:07:56 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_crossgen', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 01:07:56 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 01:07:56 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 01:07:56 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 01:08:02 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 01:08:02 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 01:08:02 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 01:08:03 | INFO     | DRIFT.phase1 | Step 3b: Pre-computing x_T cache ...
+2026-03-05 01:08:03 | INFO     | DRIFT.models.preprocessing.feature_cache | FeatureCache initialised: cache_dir='/data/lizihao/AIGC/AIGCDetectBenchmark-main/results/phase1_crossgen/x_T_cache'
+2026-03-05 01:08:03 | INFO     | DRIFT.phase1 | Pre-computing x_T for 1200 images ...
+2026-03-05 01:08:03 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset: 1200 total, 0 already cached, 1200 to compute.
+2026-03-05 03:30:45 | INFO     | DRIFT | Log file: ./results/phase1_crossgen/phase1.log
+2026-03-05 03:30:45 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 03:30:45 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 03:30:45 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 03:30:45 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_crossgen', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 03:30:45 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 03:30:45 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 03:30:45 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 03:30:51 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 03:30:52 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 03:30:52 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 03:30:53 | INFO     | DRIFT.phase1 | Step 3b: Pre-computing x_T cache ...
+2026-03-05 03:30:53 | INFO     | DRIFT.models.preprocessing.feature_cache | FeatureCache initialised: cache_dir='/data/lizihao/AIGC/AIGCDetectBenchmark-main/results/phase1_crossgen/x_T_cache'
+2026-03-05 03:30:53 | INFO     | DRIFT.phase1 | Pre-computing x_T for 1200 images ...
+2026-03-05 03:30:53 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset: 1200 total, 0 already cached, 1200 to compute.
+2026-03-05 03:32:04 | INFO     | DRIFT | Log file: ./results/phase1_crossgen/phase1.log
+2026-03-05 03:32:04 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 03:32:04 | INFO     | DRIFT.phase1 | DRIFT Phase 1 — Binary Detection (F1 Endpoint Features)
+2026-03-05 03:32:04 | INFO     | DRIFT.phase1 | ======================================================================
+2026-03-05 03:32:04 | INFO     | DRIFT.phase1 | Arguments: {'mock': False, 'num_samples': 100, 'data_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/DRIFT/data/step_a', 'train_generators': 'ProGAN,SD_v1.5', 'test_generators': 'ProGAN,SD_v1.5,Wukong', 'model_path': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', 'output_dir': './results/phase1_crossgen', 'precompute': True, 'ddim_steps': 20, 'image_size': 256, 'epochs': 10, 'lr': 0.0001, 'batch_size': 16, 'num_workers': 0, 'device': 'auto', 'feature_dim': 128, 'hidden_dim': 256, 'log_every': 10}
+2026-03-05 03:32:04 | INFO     | DRIFT.phase1 | Device: cuda
+2026-03-05 03:32:04 | INFO     | DRIFT.phase1 | Step 2: Initialising ADMBackbone ...
+2026-03-05 03:32:04 | INFO     | DRIFT.models.backbone.adm_wrapper | Loading ADM model from '/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt' ...
+2026-03-05 03:32:11 | INFO     | DRIFT.models.backbone.adm_wrapper | ADM model loaded successfully. DDIM steps=20, image_size=256, strategy=uniform
+2026-03-05 03:32:11 | INFO     | DRIFT.phase1 | Backbone: ADMBackbone(model_path='/data/lizihao/AIGC/AIGCDetectBenchmark-main/weights/preprocessing/256x256_diffusion_uncond.pt', device='cuda', ddim_steps=20, image_size=256, mock=False)
+2026-03-05 03:32:11 | INFO     | DRIFT.phase1 | Step 3: Building DataLoaders ...
+2026-03-05 03:32:12 | INFO     | DRIFT.phase1 | Step 3b: Pre-computing x_T cache ...
+2026-03-05 03:32:12 | INFO     | DRIFT.models.preprocessing.feature_cache | FeatureCache initialised: cache_dir='/data/lizihao/AIGC/AIGCDetectBenchmark-main/results/phase1_crossgen/x_T_cache'
+2026-03-05 03:32:12 | INFO     | DRIFT.phase1 | Pre-computing x_T for 1200 images ...
+2026-03-05 03:32:12 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset: 1200 total, 125 already cached, 1075 to compute.
+2026-03-05 03:59:12 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset complete. Computed 1075 entries.
+2026-03-05 03:59:12 | INFO     | DRIFT.phase1 | Cache stats: {'num_files': 1048, 'total_size_mb': 787.56, 'cache_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/results/phase1_crossgen/x_T_cache'}
+2026-03-05 03:59:12 | INFO     | DRIFT.phase1 | Step 4: Initialising EndpointFeatureExtractor and BinaryDetectionHead ...
+2026-03-05 03:59:12 | INFO     | DRIFT.phase1 | Extractor: EndpointFeatureExtractor(feature_dim=128)
+2026-03-05 03:59:12 | INFO     | DRIFT.phase1 | Head: BinaryDetectionHead(feature_dim=128, hidden_dim=256)
+2026-03-05 03:59:12 | INFO     | DRIFT.phase1 | Step 5: Starting training for 10 epoch(s) ...
+2026-03-05 03:59:12 | INFO     | DRIFT.training.trainer | Starting training: epochs=10, device=cuda
+2026-03-05 03:59:23 | INFO     | DRIFT.models.preprocessing.feature_cache | precompute_dataset complete. Computed 1200 entries.
+2026-03-05 03:59:23 | INFO     | DRIFT.phase1 | Cache stats: {'num_files': 1048, 'total_size_mb': 787.56, 'cache_dir': '/data/lizihao/AIGC/AIGCDetectBenchmark-main/results/phase1_crossgen/x_T_cache'}
+2026-03-05 03:59:23 | INFO     | DRIFT.phase1 | Step 4: Initialising EndpointFeatureExtractor and BinaryDetectionHead ...
+2026-03-05 03:59:23 | INFO     | DRIFT.phase1 | Extractor: EndpointFeatureExtractor(feature_dim=128)
+2026-03-05 03:59:23 | INFO     | DRIFT.phase1 | Head: BinaryDetectionHead(feature_dim=128, hidden_dim=256)
+2026-03-05 03:59:23 | INFO     | DRIFT.phase1 | Step 5: Starting training for 10 epoch(s) ...
+2026-03-05 03:59:23 | INFO     | DRIFT.training.trainer | Starting training: epochs=10, device=cuda
+2026-03-05 04:03:12 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7195
+2026-03-05 04:03:24 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7172
+2026-03-05 04:07:13 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7209
+2026-03-05 04:07:25 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7149
+2026-03-05 04:11:14 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.7152
+2026-03-05 04:11:27 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6604
+2026-03-05 04:15:15 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6610
+2026-03-05 04:15:28 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6979
+2026-03-05 04:19:16 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6174
+2026-03-05 04:19:29 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.7075
+2026-03-05 04:24:47 | INFO     | DRIFT.training.trainer | Epoch 1/10 | train_loss=0.7191 | elapsed=1264.4s | val_loss=0.6661 | val_auc=0.6808
+2026-03-05 04:25:00 | INFO     | DRIFT.training.trainer | Epoch 1/10 | train_loss=0.7128 | elapsed=1265.9s | val_loss=0.6925 | val_auc=0.5480
+2026-03-05 04:28:48 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7406
+2026-03-05 04:29:02 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6907
+2026-03-05 04:32:49 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6925
+2026-03-05 04:33:03 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6589
+2026-03-05 04:36:50 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6817
+2026-03-05 04:37:04 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6642
+2026-03-05 04:40:51 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6477
+2026-03-05 04:41:06 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.7955
+2026-03-05 04:44:52 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6272
+2026-03-05 04:45:07 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.7781
+2026-03-05 04:50:24 | INFO     | DRIFT.training.trainer | Epoch 2/10 | train_loss=0.6836 | elapsed=1265.6s | val_loss=0.6435 | val_auc=0.7074
+2026-03-05 04:50:39 | INFO     | DRIFT.training.trainer | Epoch 2/10 | train_loss=0.6972 | elapsed=1267.5s | val_loss=0.6639 | val_auc=0.6314
+2026-03-05 04:54:24 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.5712
+2026-03-05 04:54:40 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7815
+2026-03-05 04:58:26 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7030
+2026-03-05 04:58:42 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6684
+2026-03-05 05:02:27 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6019
+2026-03-05 05:02:43 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6761
+2026-03-05 05:06:28 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.7182
+2026-03-05 05:06:44 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.7127
+2026-03-05 05:10:29 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.7232
+2026-03-05 05:10:46 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6379
+2026-03-05 05:16:01 | INFO     | DRIFT.training.trainer | Epoch 3/10 | train_loss=0.6694 | elapsed=1265.9s | val_loss=0.6297 | val_auc=0.7261
+2026-03-05 05:16:17 | INFO     | DRIFT.training.trainer | Epoch 3/10 | train_loss=0.6788 | elapsed=1267.0s | val_loss=0.6460 | val_auc=0.6940
+2026-03-05 05:20:02 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7213
+2026-03-05 05:20:19 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6490
+2026-03-05 05:24:03 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7349
+2026-03-05 05:24:20 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6345
+2026-03-05 05:28:04 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6497
+2026-03-05 05:28:21 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.7008
+2026-03-05 05:32:05 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.7161
+2026-03-05 05:32:23 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6455
+2026-03-05 05:36:06 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6509
+2026-03-05 05:36:24 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.7643
+2026-03-05 05:41:38 | INFO     | DRIFT.training.trainer | Epoch 4/10 | train_loss=0.6602 | elapsed=1265.9s | val_loss=0.6314 | val_auc=0.7396
+2026-03-05 05:41:55 | INFO     | DRIFT.training.trainer | Epoch 4/10 | train_loss=0.6624 | elapsed=1266.9s | val_loss=0.6384 | val_auc=0.7096
+2026-03-05 05:45:39 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.5588
+2026-03-05 05:45:57 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.5946
+2026-03-05 05:49:40 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7360
+2026-03-05 05:49:58 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6955
+2026-03-05 05:53:41 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6553
+2026-03-05 05:53:59 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6747
+2026-03-05 05:57:42 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6938
+2026-03-05 05:58:00 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.7255
+2026-03-05 06:01:43 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6258
+2026-03-05 06:02:01 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6154
+2026-03-05 06:07:14 | INFO     | DRIFT.training.trainer | Epoch 5/10 | train_loss=0.6515 | elapsed=1265.0s | val_loss=0.6216 | val_auc=0.7505
+2026-03-05 06:07:32 | INFO     | DRIFT.training.trainer | Epoch 5/10 | train_loss=0.6614 | elapsed=1265.7s | val_loss=0.6350 | val_auc=0.7116
+2026-03-05 06:11:14 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6418
+2026-03-05 06:11:33 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6156
+2026-03-05 06:15:15 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7267
+2026-03-05 06:15:34 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6747
+2026-03-05 06:19:16 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6136
+2026-03-05 06:19:35 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6820
+2026-03-05 06:23:17 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.7189
+2026-03-05 06:23:37 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6214
+2026-03-05 06:27:18 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6515
+2026-03-05 06:27:38 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6248
+2026-03-05 06:32:49 | INFO     | DRIFT.training.trainer | Epoch 6/10 | train_loss=0.6427 | elapsed=1264.5s | val_loss=0.6211 | val_auc=0.7574
+2026-03-05 06:33:09 | INFO     | DRIFT.training.trainer | Epoch 6/10 | train_loss=0.6604 | elapsed=1265.8s | val_loss=0.6327 | val_auc=0.7248
+2026-03-05 06:36:50 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6034
+2026-03-05 06:37:10 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7292
+2026-03-05 06:40:50 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6775
+2026-03-05 06:41:11 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6267
+2026-03-05 06:44:51 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.7200
+2026-03-05 06:45:12 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6775
+2026-03-05 06:48:52 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6947
+2026-03-05 06:49:13 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6356
+2026-03-05 06:52:53 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6450
+2026-03-05 06:53:14 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6050
+2026-03-05 06:58:24 | INFO     | DRIFT.training.trainer | Epoch 7/10 | train_loss=0.6429 | elapsed=1264.7s | val_loss=0.6116 | val_auc=0.7550
+2026-03-05 06:58:46 | INFO     | DRIFT.training.trainer | Epoch 7/10 | train_loss=0.6448 | elapsed=1265.6s | val_loss=0.6280 | val_auc=0.7249
+2026-03-05 07:02:25 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.5874
+2026-03-05 07:02:47 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.7089
+2026-03-05 07:06:26 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7232
+2026-03-05 07:06:48 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7176
+2026-03-05 07:10:27 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6698
+2026-03-05 07:10:49 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.5192
+2026-03-05 07:14:28 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.5940
+2026-03-05 07:14:50 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6227
+2026-03-05 07:18:29 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6665
+2026-03-05 07:18:52 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6961
+2026-03-05 07:24:00 | INFO     | DRIFT.training.trainer | Epoch 8/10 | train_loss=0.6390 | elapsed=1264.7s | val_loss=0.6085 | val_auc=0.7615
+2026-03-05 07:24:23 | INFO     | DRIFT.training.trainer | Epoch 8/10 | train_loss=0.6403 | elapsed=1266.1s | val_loss=0.6259 | val_auc=0.7325
+2026-03-05 07:28:01 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6749
+2026-03-05 07:28:24 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6219
+2026-03-05 07:32:02 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.7292
+2026-03-05 07:32:25 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6147
+2026-03-05 07:36:03 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.7101
+2026-03-05 07:36:27 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6833
+2026-03-05 07:40:04 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.5659
+2026-03-05 07:40:28 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6175
+2026-03-05 07:44:05 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6814
+2026-03-05 07:44:29 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6923
+2026-03-05 07:49:37 | INFO     | DRIFT.training.trainer | Epoch 9/10 | train_loss=0.6261 | elapsed=1265.2s | val_loss=0.6078 | val_auc=0.7629
+2026-03-05 07:50:01 | INFO     | DRIFT.training.trainer | Epoch 9/10 | train_loss=0.6428 | elapsed=1266.2s | val_loss=0.6240 | val_auc=0.7375
+2026-03-05 07:53:39 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6750
+2026-03-05 07:54:04 | INFO     | DRIFT.training.trainer |   [batch 10/53] loss=0.6280
+2026-03-05 07:57:41 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.6328
+2026-03-05 07:58:05 | INFO     | DRIFT.training.trainer |   [batch 20/53] loss=0.5312
+2026-03-05 08:01:42 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.5355
+2026-03-05 08:02:06 | INFO     | DRIFT.training.trainer |   [batch 30/53] loss=0.6104
+2026-03-05 08:05:43 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6093
+2026-03-05 08:06:08 | INFO     | DRIFT.training.trainer |   [batch 40/53] loss=0.6349
+2026-03-05 08:09:44 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6379
+2026-03-05 08:10:09 | INFO     | DRIFT.training.trainer |   [batch 50/53] loss=0.6022
+2026-03-05 08:15:15 | INFO     | DRIFT.training.trainer | Epoch 10/10 | train_loss=0.6299 | elapsed=1266.7s | val_loss=0.6078 | val_auc=0.7632
+2026-03-05 08:15:15 | INFO     | DRIFT.training.trainer | Checkpoint saved to './results/phase1_crossgen/checkpoints/drift_epoch0010.pth'.
+2026-03-05 08:15:15 | INFO     | DRIFT.training.trainer | Training complete.
+2026-03-05 08:15:15 | INFO     | DRIFT.phase1 | Training complete in 15363.2 seconds.
+2026-03-05 08:15:15 | INFO     | DRIFT.utils.checkpointing | Checkpoint saved: './results/phase1_crossgen/checkpoints/epoch_0010.pth' (epoch 10).
+2026-03-05 08:15:15 | INFO     | DRIFT.utils.checkpointing | Checkpoint saved: './results/phase1_crossgen/checkpoints/best.pth' (epoch 10).
+2026-03-05 08:15:15 | INFO     | DRIFT.utils.checkpointing | New best model: val_auc=0.7632 (epoch 10) → saved to './results/phase1_crossgen/checkpoints/best.pth'.
+2026-03-05 08:15:15 | INFO     | DRIFT.phase1 | Best model saved to './results/phase1_crossgen/best_model.pt'.
+2026-03-05 08:15:15 | INFO     | DRIFT.phase1 | Training curves saved to './results/phase1_crossgen/training_curves.png'.
+2026-03-05 08:15:15 | INFO     | DRIFT.phase1 | Step 6: Cross-generator evaluation ...
+2026-03-05 08:15:40 | INFO     | DRIFT.training.trainer | Epoch 10/10 | train_loss=0.6461 | elapsed=1267.6s | val_loss=0.6237 | val_auc=0.7380
+2026-03-05 08:15:40 | INFO     | DRIFT.training.trainer | Checkpoint saved to './results/phase1_crossgen/checkpoints/drift_epoch0010.pth'.
+2026-03-05 08:15:40 | INFO     | DRIFT.training.trainer | Training complete.
+2026-03-05 08:15:40 | INFO     | DRIFT.phase1 | Training complete in 15376.5 seconds.
+2026-03-05 08:15:40 | INFO     | DRIFT.utils.checkpointing | Checkpoint saved: './results/phase1_crossgen/checkpoints/epoch_0010.pth' (epoch 10).
+2026-03-05 08:15:40 | INFO     | DRIFT.utils.checkpointing | Checkpoint saved: './results/phase1_crossgen/checkpoints/best.pth' (epoch 10).
+2026-03-05 08:15:40 | INFO     | DRIFT.utils.checkpointing | New best model: val_auc=0.7380 (epoch 10) → saved to './results/phase1_crossgen/checkpoints/best.pth'.
+2026-03-05 08:15:40 | INFO     | DRIFT.phase1 | Best model saved to './results/phase1_crossgen/best_model.pt'.
+2026-03-05 08:15:40 | INFO     | DRIFT.phase1 | Training curves saved to './results/phase1_crossgen/training_curves.png'.
+2026-03-05 08:15:40 | INFO     | DRIFT.phase1 | Step 6: Cross-generator evaluation ...
+2026-03-05 08:16:45 | INFO     | DRIFT.phase1 |   [ProGAN] AUC = 0.6487 (n=60)
+2026-03-05 08:17:10 | INFO     | DRIFT.phase1 |   [ProGAN] AUC = 0.5724 (n=60)
+2026-03-05 08:18:16 | INFO     | DRIFT.phase1 |   [SD_v1.5] AUC = 0.8025 (n=60)
+2026-03-05 08:18:41 | INFO     | DRIFT.phase1 |   [SD_v1.5] AUC = 0.8182 (n=60)
+2026-03-05 08:19:46 | INFO     | DRIFT.phase1 |   [Wukong] AUC = 0.8496 (n=60)
+2026-03-05 08:19:46 | INFO     | DRIFT.phase1 | Mean AUC across generators: 0.7669
+2026-03-05 08:19:46 | INFO     | DRIFT.phase1 | Step 7: Saving results to './results/phase1_crossgen' ...
+2026-03-05 08:19:46 | INFO     | DRIFT.phase1 | Cross-generator AUC JSON saved to './results/phase1_crossgen/cross_generator_auc.json'.
+2026-03-05 08:19:46 | INFO     | DRIFT.phase1 | Cross-generator AUC table saved to './results/phase1_crossgen/cross_generator_auc_table.md'.
+2026-03-05 08:20:11 | INFO     | DRIFT.phase1 |   [Wukong] AUC = 0.8653 (n=60)
+2026-03-05 08:20:11 | INFO     | DRIFT.phase1 | Mean AUC across generators: 0.7520
+2026-03-05 08:20:11 | INFO     | DRIFT.phase1 | Step 7: Saving results to './results/phase1_crossgen' ...
+2026-03-05 08:20:11 | INFO     | DRIFT.phase1 | Cross-generator AUC JSON saved to './results/phase1_crossgen/cross_generator_auc.json'.
+2026-03-05 08:20:11 | INFO     | DRIFT.phase1 | Cross-generator AUC table saved to './results/phase1_crossgen/cross_generator_auc_table.md'.
+2026-03-05 08:24:18 | INFO     | DRIFT.phase1 | ROC curves saved to './results/phase1_crossgen/roc_curves.png'.
+2026-03-05 08:24:43 | INFO     | DRIFT.phase1 | ROC curves saved to './results/phase1_crossgen/roc_curves.png'.
+2026-03-05 08:28:50 | INFO     | DRIFT.phase1 | Confusion matrix saved to './results/phase1_crossgen/confusion_matrix.png'.
+2026-03-05 08:29:01 | INFO     | DRIFT.phase1 | Confusion matrix saved to './results/phase1_crossgen/confusion_matrix.png'.
